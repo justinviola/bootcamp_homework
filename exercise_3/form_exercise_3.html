@@ -21,13 +21,15 @@
         /* 
           -Background color is #344a72
         */
-       background-color: #344a72;
+        background-color: #344a72;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
+        text-decoration: none;
       }
 
       #container {
@@ -36,12 +38,18 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        margin: auto;
+        width: 25%;
+        max-width: fit-content;
+        /* padding: 25px; */
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
+        background-color: white;
+        padding: 25px;
       }
 
       .form-wrap h1,
@@ -49,6 +57,7 @@
         /* 
           May want to center these
         */
+        text-align: center;
       }
 
       .form-wrap .form-group {
@@ -61,12 +70,23 @@
         /* 
           Label should be turned into a block element
         */
+        /* display: block; */
+
+        width: 100%;
+        line-height: 25px;
       }
 
       .form-wrap .form-group input {
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
       }
 
       .form-wrap button {
@@ -74,30 +94,43 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        text-align: center;
+        width: 100%;
+        color: white;
+        background-color: #49c1a2;
+        padding: 10px;
+        margin: 8px 0;
+        padding: 12px 20px;
       }
 
       .form-wrap button:hover {
         /* 
           Hover background color for button is #37a08e
         */
+        background-color: #37a08e;
       }
 
       .form-wrap .bottom-text {
         /* 
           Bottom text is smaller
         */
+        font-size: small;
       }
 
       footer {
         /* 
         Should be centered
        */
+        color: white;
+        text-align: center;
+        font-size: medium;
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
+        color: #49c1a2;
       }
     </style>
   </head>
@@ -129,7 +162,7 @@
           </div>
           <button type="submit" class="btn">Sign Up</button>
           <p class="bottom-text">
-            By clicking the Sign Up button, you agree to our
+            By clicking the Sign Up button, you agree to our <br />
             <a href="#">Terms & Conditions</a> and
             <a href="#">Privacy Policy</a>
           </p>
