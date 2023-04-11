@@ -15,21 +15,23 @@
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+       margin: 0px;
+       padding: 0px;
+      font-family: "Raleway",sans-serif;
       }
 
       body {
         /* 
           -Background color is #344a72
         */
-        background-color: #344a72;
-        font-family: Arial, Helvetica, sans-serif;
+         background-color: #344a72; 
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
-        text-decoration: none;
+       text-decoration: none;
       }
 
       #container {
@@ -38,10 +40,12 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        max-width: 400px;
         margin: auto;
-        width: 25%;
-        max-width: fit-content;
-        /* padding: 25px; */
+        text-align: center;
+        margin-top: 30px;
+
+
       }
 
       .form-wrap {
@@ -58,23 +62,25 @@
           May want to center these
         */
         text-align: center;
+        margin-top: 20px;
       }
 
       .form-wrap .form-group {
         /* 
           Each label, input is wrapped in .form-group
         */
+        width: 100%;
       }
 
       .form-wrap .form-group label {
         /* 
           Label should be turned into a block element
         */
-        /* display: block; */
-
         width: 100%;
-        line-height: 25px;
-      }
+      text-align: left;
+      margin: 0;
+      display: block;
+            }
 
       .form-wrap .form-group input {
         /* 
@@ -86,7 +92,7 @@
         display: inline-block;
         border: 1px solid #ccc;
         border-radius: 4px;
-        box-sizing: border-box;
+        box-sizing:border-box;
       }
 
       .form-wrap button {
@@ -94,13 +100,12 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
-        text-align: center;
         width: 100%;
+        height: 40px;
         color: white;
         background-color: #49c1a2;
-        padding: 10px;
-        margin: 8px 0;
-        padding: 12px 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
       }
 
       .form-wrap button:hover {
@@ -115,22 +120,22 @@
           Bottom text is smaller
         */
         font-size: small;
+        line-height: 1.8;
       }
 
       footer {
         /* 
         Should be centered
        */
-        color: white;
-        text-align: center;
-        font-size: medium;
+       color: white;
+       margin-top: 20px;
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
-        color: #49c1a2;
+        color:#49c1a2
       }
     </style>
   </head>
@@ -153,6 +158,10 @@
             <input type="email" name="email" id="email" />
           </div>
           <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" />
           </div>
@@ -162,7 +171,7 @@
           </div>
           <button type="submit" class="btn">Sign Up</button>
           <p class="bottom-text">
-            By clicking the Sign Up button, you agree to our <br />
+            By clicking the Sign Up button, you agree to our
             <a href="#">Terms & Conditions</a> and
             <a href="#">Privacy Policy</a>
           </p>
