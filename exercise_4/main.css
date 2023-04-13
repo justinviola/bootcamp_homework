@@ -1,0 +1,232 @@
+<style>
+* {
+  /* 
+  -May want to add "border-box for "box-sizing so padding does not affect width
+  -Reset margin and padding 
+ */
+
+}
+
+body {
+  /* 
+    -Background color is #344a72
+  */
+  background-color: hsl(0, 1%, 23%);
+}
+
+a {
+  /* 
+  Underlined links are ugly :)
+ */
+  text-decoration: none;
+}
+
+#container {
+  /* 
+  -Remember, margin: auto on left and right will center a block element 
+  -I would also set a "max-width" for responsiveness
+  -May want to add some padding
+  */
+  margin: auto;
+  width: 50%;
+  max-width: fit-content;
+  padding: 50px;
+}
+
+.form-wrap {
+  /* 
+    This is the white area around the form and heading, etc
+  */
+  background-color: white;
+  padding: 25px;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  /* 
+    May want to center these
+  */
+  text-align: left;
+}
+
+.form-group {
+  /* 
+    Each label, input is wrapped in .form-group
+  */
+  width: 100%;
+  line-height: 25px;
+}
+
+.form-wrap  {
+  /* 
+    Each label, input is wrapped in .form-group
+  */
+  width: 100%;
+  line-height: 25px;
+}
+
+.form-wrap .form-group-togather {
+    /* 
+      Each label, input is wrapped in .form-group
+    */
+    width: 100%;
+    line-height: 25px;
+  }
+
+
+
+  .form-wrap .form-group input {
+    /* 
+      Inputs should reach accross the .form-wrap 100% and have some padding
+    */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-wrap .form-group select {
+      /* 
+        Inputs should reach accross the .form-wrap 100% and have some padding
+      */
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+
+.form-wrap .form-group label {
+  /* 
+    Label should be turned into a block element
+  */
+  line-height: 25px;
+  width: 100%;
+}
+
+.form-wrap .form-group-togather .box {
+    float: left;
+    width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 5px; /* if you want space between the images */
+    box-sizing: border-box;
+  }
+
+  .form-wrap .form-group-togather label {
+    /* 
+      Label should be turned into a block element
+    */
+    line-height: 25px;
+    width: 100%;
+  }
+
+.form-wrap .form-group-togather input {
+    /* 
+      Inputs should reach accross the .form-wrap 100% and have some padding
+    */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+ .form-wrap textarea {
+    /* 
+      Button should wrap accross 100% and display as block
+      Background color for button is #49c1a2
+    */
+    width: 550px; 
+    height:300px;
+    padding: 2px 20px;
+border-color: rgb(41, 172, 242);
+  }
+
+  #address {
+
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #comment {
+
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.form-wrap button:hover {
+  /* 
+    Hover background color for button is #37a08e
+  */
+
+}
+
+.form-wrap .bottom-text {
+  /* 
+    Bottom text is smaller
+  */
+  font-size: small;
+  line-height: 1.8;
+}
+
+footer {
+  /* 
+  Should be centered
+ */
+  color: white;
+  text-align: center;
+  font-size: medium;
+}
+
+footer a {
+  /* 
+    Footer link color is #49c1a2
+  */
+  color: #49c1a2;
+}
+
+#signaturetitle {
+    text-align: left;
+
+  }
+
+  canvas#signature-pad {
+    width: 60%;
+    height: 250px;
+    padding: 12px 20px;
+
+    border: 1px solid #ccc;
+    cursor: crosshair;
+    box-sizing: border-box;
+}
+
+  .button input{
+    /* 
+      Button should wrap accross 100% and display as block
+      Background color for button is #49c1a2
+    */
+   height: 25px;
+   margin-bottom: 15px;
+  }
+
+  .required-field::after {
+    content: "*";
+    color: red;
+    margin-left:2px
+  }
+
+</style>
