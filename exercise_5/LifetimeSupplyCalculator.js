@@ -1,7 +1,7 @@
 function calculateSupply(age, amountperday)
 {
     const maxAge= 80
-    var amtConsumed = Math.round((80-age)*365*amountperday);
+    let amtConsumed = Math.round((80-age)*365*amountperday);
     console.log(`You will need $${amtConsumed} to last you until the ripe old
     age of ${maxAge}`)
 

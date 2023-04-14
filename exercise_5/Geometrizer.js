@@ -10,8 +10,10 @@
 
  function calcArea(circleRadius)
  {
-    var areaofCircle= 3.14 * circleRadius * circleRadius;
-    console.log("The area of a circle is:" + areaofCircle );
+    let areaofCircle= 3.14 * circleRadius * circleRadius;
+    // console.log("The area of a circle is:" + areaofCircle );
+    console.log(`
+    The area of a circle is: areaofCircle` );
  }
  calcArea(5)
  calcArea(9)

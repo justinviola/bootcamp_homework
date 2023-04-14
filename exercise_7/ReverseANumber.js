@@ -1,5 +1,3 @@
-
-
 // const reverseNumber = number => parseFloat(number.toString().split('').reverse().join('')) * Math.sign(number)
 
 function reverseNumber (number)

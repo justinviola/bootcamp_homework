@@ -1,4 +1,6 @@
-function tellFortune(noOfChild,partnerName,geoLocation,jobTile){
+
+function tellFortune(noOfChild,partnerName,geoLocation,jobTile)
+{
 console.log(`You will be a ${jobTile} in ${geoLocation}, and married to ${partnerName} with ${noOfChild} kids.`)
 }
 
