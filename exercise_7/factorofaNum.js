@@ -18,3 +18,11 @@ else {
     }
     console.log(`The factorial of ${number} is ${fact}.`);
 }
+
+
+getFactorial(n)
+{
+    var factor =n*(n-1)*(n-2)*
+    console.log(`The factorial of ${number} is ${fact}.`);
+}
+}
