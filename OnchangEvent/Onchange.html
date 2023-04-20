@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<label>Please enter Length</label>
+<input type="text" id="length" value="" />
+
+<label>Please enter width</label>
+<input type="text"  id="width" value="" />
+
+<button onClick="areaOfRectangle()" id="submit">Area of a circle</button>
+
+<div id="display">
+
+</div>
+
+<script>
+
+    function areaOfRectangle()
+    {
+     let len = document.getElementById("length").value;   
+     let wid = document.getElementById("width").value; 
+     document.getElementById("display").innerHTML=len*wid
+     
+    }
+    
+</script>
+</body>
+</html>
